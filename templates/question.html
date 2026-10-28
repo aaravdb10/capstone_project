@@ -1,0 +1,26 @@
+//student result checker
+<!-- create a django page that displays a student's marks and result
+ 1) pass name and marks from view
+ 2)use if else in template
+ 3)if marks are 40 or above, display PASS else FAIL
+ 
+ O/P: student: rahul
+      marks: 75
+      result: PASS-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Document</title>
+</head>
+<body>
+     <h1>result is-</h1>
+     {{student}}
+     {% if marks > 40 %}
+     <h3>PASS</h3>
+     {% else %}
+     <h3>FAIL</h3>
+     {%endif%}
+</body>
+</html>

@@ -1,0 +1,26 @@
+//student list using for loop
+<!-- create a django page that displays list of 5 students
+ each student should have id, name, course, marks
+ pass the list from the view and use a dtl for look to display the students 
+ 
+ O/P: 
+ 101 rahul bca 75
+ 102 aman bca 35
+ 103 priya mca 93
+ 104 neha mca 23
+ 105 sam  bca 43
+ -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <h1>result of students-</h1>
+    {% for student in students %}
+    {{ student.id }} {{ student.name }} {{ student.course }} {{ student.marks }}<br>
+    {% endfor %}
+ </body>
+ </html>

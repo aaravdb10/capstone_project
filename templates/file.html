@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>ca1 question</h1>
+</head>
+<body>
+    <h1>The result will be:</h1>
+    {% for employee in employees %}
+        <p>{{ employee.name }} - Performance Score: {{ employee.performance }}</p>
+        {% if employee.performance > 80 %}
+            <h1>Excellent</h1>
+        {% elif employee.performance > 60 %}
+            <h1>Good</h1>
+        {% else %}
+            <h1>Needs improvement</h1>
+        {% endif %}
+    {% endfor %}
+    <h1>total number of employees:</h1>
+    <h1>{{employees | length}}</h1>
+</body>
+</html>

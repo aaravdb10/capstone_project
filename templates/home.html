@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>index page!</h1>
+
+    <h1>before</h1>
+    {{username}}
+    <br>
+    {{course}}
+    <h1>after</h1>
+    {{username|upper}}
+    <br>
+    {{course|lower}}
+    <br>
+    {{username|title}}
+    <br>
+    {{course|length}}
+    <br>
+    {{fees|add:1000}}
+    <br>
+    {{username|slice:":4"}}
+    <br>
+    {{name|default:'Guest'}}
+    <br>
+    {{name|default_if_none:'No Name'}}
+    <br>
+    {{username|truncatechars:4}}
+    <br>
+    {{description|truncatewords:5}}
+    <br>
+    
+</body>
+</html>
